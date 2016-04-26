@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     JZCycleView *view = [[JZCycleView alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
-    [view setUpImagesArray:@[@"https://img1.doubanio.com/view/photo/photo/public/p2192654839.jpg"]];
+    [view setUpImagesArray:@[@"https://img1.doubanio.com/view/photo/photo/public/p2192654839.jpg",[UIImage imageNamed:@"10083737,1920,1080.jpg"],@"10864178,1920,1080.jpg"]];
     [self.view addSubview:view];
     // Do any additional setup after loading the view, typically from a nib.
 }

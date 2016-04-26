@@ -10,6 +10,6 @@
 
 @interface JZCycleView : UIView
 
--(instancetype)initWithFrame:(CGRect)frame andArray:(NSArray *)array;
--(void)setUpImagesArray:(NSArray*)array;
+-(instancetype)initWithFrame:(CGRect)frame andArray:(NSArray *)array;/**< 构造函数,包含图书数组 */
+-(void)setUpImagesArray:(NSArray*)array;/**< 设置图像数组,一定要有 */
 @end

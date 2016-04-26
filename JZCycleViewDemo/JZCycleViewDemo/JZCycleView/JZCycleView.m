@@ -154,7 +154,7 @@ IBInspectable
  */
 - (UIImage *)loadImageWithNumber:(NSUInteger)index{
     NSString *name;
-    UIImage *image = [UIImage imageNamed:@"10083737,1920,1080"];
+    UIImage *image;
     if ([self.imagesArray[index] isKindOfClass:[UIImage class]]) {
         return self.imagesArray[index];
     }else if ([self.imagesArray[index] isKindOfClass:[NSString class]]){
@@ -162,9 +162,12 @@ IBInspectable
     }else{
         return nil;
     }
+    image = [UIImage imageNamed:name];
     if (image) {
         self.imagesArray[index] = image;
         return image;
+    }else{
+       image = [UIImage imageNamed:@"10083737,1920,1080"];
     }
     image = [UIImage imageWithContentsOfFile:[self cachePathWithFileName:name]];
     if (image) {
