@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JZCycleView">
+            <connections>
+                <outlet property="contentVIew" destination="2PR-z0-h7D" id="Jrg-Jy-1rp"/>
+                <outlet property="pageView" destination="10V-bu-J9C" id="Ser-gc-fth"/>
+                <outlet property="reveal" destination="kFr-BG-ySe" id="37u-V9-cDD"/>
+                <outlet property="revealViewLeftMargin" destination="lQe-XZ-Vb1" id="ZaQ-cU-ZPe"/>
+                <outlet property="scrollContentWidth" destination="Igt-hK-ipv" id="FKv-3O-TYB"/>
+                <outlet property="scrollView" destination="HiH-cE-xIg" id="QSd-h6-B7t"/>
+                <outlet property="tempIamgeViewLeftMargin" destination="5QW-zm-cNd" id="xmP-uw-PUC"/>
+                <outlet property="tempImageView" destination="oTG-4C-L0t" id="8j2-nh-RZV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5ez-zN-MqI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiH-cE-xIg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PR-z0-h7D">
+                            <rect key="frame" x="0.0" y="0.0" width="960" height="340"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bizhi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kFr-BG-ySe">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10083737,1920,1080.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oTG-4C-L0t">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="oTG-4C-L0t" firstAttribute="width" secondItem="kFr-BG-ySe" secondAttribute="width" id="55e-fT-n8U"/>
+                                <constraint firstItem="oTG-4C-L0t" firstAttribute="leading" secondItem="2PR-z0-h7D" secondAttribute="leading" id="5QW-zm-cNd"/>
+                                <constraint firstAttribute="bottom" secondItem="kFr-BG-ySe" secondAttribute="bottom" id="8Mg-vM-pLd"/>
+                                <constraint firstItem="oTG-4C-L0t" firstAttribute="top" secondItem="kFr-BG-ySe" secondAttribute="top" id="XI7-De-n2g"/>
+                                <constraint firstItem="kFr-BG-ySe" firstAttribute="leading" secondItem="2PR-z0-h7D" secondAttribute="leading" id="lQe-XZ-Vb1"/>
+                                <constraint firstItem="oTG-4C-L0t" firstAttribute="height" secondItem="kFr-BG-ySe" secondAttribute="height" id="rFo-VU-bPd"/>
+                                <constraint firstItem="kFr-BG-ySe" firstAttribute="top" secondItem="2PR-z0-h7D" secondAttribute="top" id="rkZ-jH-acD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2PR-z0-h7D" firstAttribute="top" secondItem="HiH-cE-xIg" secondAttribute="top" id="Dn8-wB-85y"/>
+                        <constraint firstItem="kFr-BG-ySe" firstAttribute="width" secondItem="HiH-cE-xIg" secondAttribute="width" id="Mx6-Aw-LTN"/>
+                        <constraint firstAttribute="bottom" secondItem="2PR-z0-h7D" secondAttribute="bottom" id="TQe-1r-JrG"/>
+                        <constraint firstAttribute="trailing" secondItem="2PR-z0-h7D" secondAttribute="trailing" id="bBF-Nc-fwK"/>
+                        <constraint firstItem="2PR-z0-h7D" firstAttribute="leading" secondItem="HiH-cE-xIg" secondAttribute="leading" id="kBX-tk-4ni"/>
+                    </constraints>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="10V-bu-J9C">
+                    <rect key="frame" x="140" y="295" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2PR-z0-h7D" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="7SZ-5R-jxj"/>
+                <constraint firstItem="HiH-cE-xIg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E4i-Fm-z1b"/>
+                <constraint firstAttribute="trailing" secondItem="HiH-cE-xIg" secondAttribute="trailing" id="EC9-g6-ycT"/>
+                <constraint firstItem="2PR-z0-h7D" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="3:1" priority="750" id="Igt-hK-ipv"/>
+                <constraint firstItem="HiH-cE-xIg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JOS-qs-mWC"/>
+                <constraint firstItem="10V-bu-J9C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MnW-sy-GuV"/>
+                <constraint firstAttribute="bottom" secondItem="10V-bu-J9C" secondAttribute="bottom" constant="8" id="PH6-YN-I8v"/>
+                <constraint firstAttribute="bottom" secondItem="HiH-cE-xIg" secondAttribute="bottom" id="tDP-6y-BO1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="233" y="193"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="10083737,1920,1080.jpg" width="1920" height="1080"/>
+        <image name="bizhi.jpg" width="1920" height="1080"/>
+    </resources>
+</document>
